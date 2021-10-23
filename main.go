@@ -59,6 +59,7 @@ func main() {
 	router := gin.Default()
 	router.GET("/albums", getAlbums)
 	router.POST("/albums", postAlbums)
+	router.GET("/albums/:id", getAlbumByID)
 
 	router.Run("localhost:5000")
 }
